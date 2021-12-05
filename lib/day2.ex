@@ -5,7 +5,7 @@ defmodule Day2 do
 
   @doc """
   Example
-    iex> list = [ {"forward", 5}, {"down", 5}, {"forward", 8}, {"up", 3}, {"down", 8}, {"forward", 2} ]
+    iex> list = [{"forward", 5}, {"down", 5}, {"forward", 8}, {"up", 3}, {"down", 8}, {"forward", 2}]
     iex> Day2.part1(list)
     150
   """
@@ -19,7 +19,7 @@ defmodule Day2 do
 
   @doc """
   Example
-    iex> list = [ {"forward", 5}, {"down", 5}, {"forward", 8}, {"up", 3}, {"down", 8}, {"forward", 2} ]
+    iex> list = [{"forward", 5}, {"down", 5}, {"forward", 8}, {"up", 3}, {"down", 8}, {"forward", 2}]
     iex> Day2.part2(list)
     900
   """
