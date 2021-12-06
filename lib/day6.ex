@@ -36,7 +36,7 @@ defmodule Day6 do
   26984457539
   """
   def part2(input, days) do
-    parse_file(@input, split_by: ",", map_by: &map_fn/1)
+    parse_file(input, split_by: ",", map_by: &map_fn/1)
     |> Enum.frequencies()
     |> Map.to_list()
     |> calc_fish(days)

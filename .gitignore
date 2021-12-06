@@ -24,3 +24,5 @@ aoc2021-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
+
+/priv/day*.txt
