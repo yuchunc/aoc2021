@@ -8,6 +8,7 @@ defmodule Helper do
     else
       input
     end
+    |> String.trim()
     |> String.split(split_by, trim: true)
     |> Enum.map(map_fn)
   end
