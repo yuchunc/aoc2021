@@ -5,13 +5,13 @@ defmodule Day6 do
 
   @doc """
   Example
-  iex> input = "3,4,3,1,2"
-  iex> days = 80
-  iex> Day6.part1(input, days)
-  5934
+    iex> input = "3,4,3,1,2"
+    iex> days = 80
+    iex> Day6.part1(input, days)
+    5934
   """
   def part1(input, days) do
-    fishes = parse_file(input, split_by: ",", map_by: &map_fn/1)
+    fishes = parse_file(input, split_by: ",", map_by: &String.to_integer/1)
 
     1..days
     |> Enum.reduce(fishes, &compute_day/2)
@@ -30,13 +30,13 @@ defmodule Day6 do
 
   @doc """
   Example
-  iex> input = "3,4,3,1,2"
-  iex> days = 256
-  iex> Day6.part2(input, days)
-  26984457539
+    iex> input = "3,4,3,1,2"
+    iex> days = 256
+    iex> Day6.part2(input, days)
+    26984457539
   """
   def part2(input, days) do
-    parse_file(input, split_by: ",", map_by: &map_fn/1)
+    parse_file(input, split_by: ",", map_by: &String.to_integer/1)
     |> Enum.frequencies()
     |> Map.to_list()
     |> calc_fish(days)
@@ -54,9 +54,5 @@ defmodule Day6 do
       |> Enum.map(fn {fish_type, counts} -> {fish_type, Enum.sum(counts)} end)
 
     calc_fish(fish_counts_1, days - 1)
-  end
-
-  defp map_fn(element) do
-    String.to_integer(element)
   end
 end
