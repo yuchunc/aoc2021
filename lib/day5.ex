@@ -5,7 +5,7 @@ defmodule Day5 do
 
   @doc """
   Example:
-    iex> input = """
+    iex> input = \"""
     ...> 0,9 -> 5,9
     ...> 8,0 -> 0,8
     ...> 9,4 -> 3,4
@@ -16,7 +16,7 @@ defmodule Day5 do
     ...> 3,4 -> 1,4
     ...> 0,0 -> 8,8
     ...> 5,5 -> 8,2
-    ...> """
+    ...> \"""
     iex> Day5.part1(input)
     5
   """
@@ -35,7 +35,7 @@ defmodule Day5 do
 
   @doc """
   Example:
-    iex> input = """
+    iex> input = \"""
     ...> 0,9 -> 5,9
     ...> 8,0 -> 0,8
     ...> 9,4 -> 3,4
@@ -46,7 +46,7 @@ defmodule Day5 do
     ...> 3,4 -> 1,4
     ...> 0,0 -> 8,8
     ...> 5,5 -> 8,2
-    ...> """
+    ...> \"""
     iex> Day5.part2(input)
     12
   """
